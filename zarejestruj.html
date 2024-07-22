@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rejestracja</title>
+    <link rel="icon" href="assets/logo/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+</html>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">Górska Perspektywa</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="shop2.html" class="dropbtn">Sklep</a>
+          <div class="dropdown-content">
+            <a href="#section1">Sprzęt wspinaczkowy</a>
+            <a href="#section2">Odzież górska</a>
+            <a href="#section3">Akcesoria</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#about">O nas</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+      <div class="nav-icons">
+        <div class="account-icon">
+          <a href="login.html">
+            <img src="assets/icon/user-24.png" alt="Konto" />
+          </a>
+        </div>
+        <div class="cart-icon">
+          <a href="card.html">
+            <img src="assets/icon/basket-24.png" alt="Koszyk" />
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div>
+    <p id="prev"></p>
+      <p id="next"></p>
+  </div>
+  <div class="search-container">
+    
+    <p id="search-input"></p>
+    <p id="search-button"></p>
+  </div>
+    <form action="/przetworz_formularz" method="post">
+        
+        <h1>Zarejsetruj się</h1>
+        <label>Imię:</label>
+        <input type="text"  required>
+        <label>Nazwisko:</label>
+        <input type="text"  required>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required>
+        <label>Adres e-mail:</label>
+        <input type="text"  required>
+        <label>Hasło:</label>
+        <input type="text"  required>
+        <label>Powtórz hasło:</label>
+        <input type="text"  required>
+
+        <!-- Przycisk do wysłania formularza -->
+        <button type="submit">Zarejestuj się</button> 
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
